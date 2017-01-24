@@ -8,6 +8,7 @@ var config = {
   output: {
     path: path.join(__dirname, 'www'),
     filename: 'bundle.js',
+    watch: true
   },
   module: {
     loaders: [
@@ -16,6 +17,10 @@ var config = {
         exclude: /node_modules/,
         loaders: ['babel'],
       },
+      { 
+        test: /\.css$/, 
+        loader: "style-loader!css-loader" 
+      }
     ],
   },
   resolveLoader: {
