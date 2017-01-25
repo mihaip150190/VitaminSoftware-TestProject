@@ -1,8 +1,10 @@
+import 'bootstrap/dist/css/bootstrap.css';
+import 'rc-checkbox/assets/index.css';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Counter from './Counter';
-import Chart from './Chart-v2';
-import 'react-select/dist/react-select.css';
+import Chart from './ChartComponent';
+
 
 document.addEventListener('DOMContentLoaded', function() {
   ReactDOM.render(
